@@ -3,25 +3,36 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "next dev -p 3202",
+    "build": "next build -p 3202",
+    "start": "next start -p 3202",
+    "lint": "next lint -p 3202",
+    "link": "npm link --save ../cabal-includes ../kulncumar-compiler ../calandry-base ../beginners-luck ../arena-base ../isjakuvic-block",
+    "unlink": "npm uninstall cabal-includes kulncumar-compiler calandry-base beginners-luck arena-base isjakuvic-block"
   },
   "dependencies": {
+    "arena-base": "file:../arena-base",
+    "axios": "^1.6.7",
+    "axios-retry": "^4.0.0",
+    "beginners-luck": "file:../beginners-luck",
+    "cabal-includes": "file:../cabal-includes",
+    "calandry-base": "file:../calandry-base",
+    "isjakuvic-block": "file:../isjakuvic-block",
+    "kulncumar-compiler": "file:../kulncumar-compiler",
+    "next": "14.1.0",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.1.0"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0",
     "eslint": "^8",
-    "eslint-config-next": "14.1.0"
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8",
+    "sass": "^1.70.0",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
   }
 }
